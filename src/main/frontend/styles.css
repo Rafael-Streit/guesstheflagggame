@@ -1,0 +1,72 @@
+.HeadingGameLoop{
+    color: #ffffff;
+    margin: auto ;
+    width: 50%;
+    text-align: center;
+    font-size: medium;
+}
+
+.StartButton{
+    background: grey;
+    margin-top : 100px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: medium;
+}
+.SettingsButton{
+    background: grey;
+    margin-top : 24px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: medium;
+}
+.rightButton{
+    color: lawngreen;
+}
+.wrongAnswerButton{
+    color: darkred;
+}
+.heading-game{
+    color: white;
+    font-family: Monocraft, Arial Black, SansSerif, serif;
+}
+
+
+
+.userNameInput{
+    background: white;
+    color: white;
+    padding: 2px;
+    border: none;
+    border-radius: 5rem;
+}
+
+.gameHeading{
+    color: white;
+}
+
+
+
+.flagImage {
+    width: 180px;
+    height: auto;
+
+    padding: 10px;
+    margin: 10px;
+
+    border: 2px solid #ccc;
+    border-radius: 8px;
+
+    background: white;
+
+    display: block;
+}
+
+body{
+    color: #000;
+    background: black;
+    font-family: Monocraft, Arial Black, SansSerif, serif;
+}
+
