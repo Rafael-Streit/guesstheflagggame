@@ -1,41 +1,49 @@
-.HeadingGameLoop{
+body {
+    color: white;
+    background: black;
+    font-family: Monocraft, Arial Black, SansSerif, serif;
+}
+
+.HeadingGameLoop {
     color: #ffffff;
-    margin: auto ;
+    margin: auto;
     width: 50%;
     text-align: center;
     font-size: medium;
 }
 
-.StartButton{
+.StartButton {
     background: grey;
-    margin-top : 100px;
+    margin-top: 100px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     font-size: medium;
 }
-.SettingsButton{
+
+.SettingsButton {
     background: grey;
-    margin-top : 24px;
+    margin-top: 24px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     font-size: medium;
 }
-.rightButton{
+
+.rightButton {
     color: lawngreen;
 }
-.wrongAnswerButton{
+
+.wrongAnswerButton {
     color: darkred;
 }
-.heading-game{
+
+.heading-game {
     color: white;
     font-family: Monocraft, Arial Black, SansSerif, serif;
 }
 
-
-
-.userNameInput{
+.userNameInput {
     background: white;
     color: white;
     padding: 2px;
@@ -43,30 +51,19 @@
     border-radius: 5rem;
 }
 
-.gameHeading{
+.gameHeading {
     color: white;
 }
-
-
 
 .flagImage {
     width: 180px;
     height: auto;
-
     padding: 10px;
     margin: 10px;
-
-    border: 2px solid #ccc;
+    border: 2px solid;
     border-radius: 8px;
-
-    background: white;
-
     display: block;
 }
 
-body{
-    color: #000;
-    background: black;
-    font-family: Monocraft, Arial Black, SansSerif, serif;
-}
+
 
