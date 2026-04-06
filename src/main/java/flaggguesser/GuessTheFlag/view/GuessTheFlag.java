@@ -1,24 +1,32 @@
 package flaggguesser.GuessTheFlag.view;
 
 
+import com.vaadin.componentfactory.ToggleButton;
+import com.vaadin.flow.component.UI;
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.dependency.CssImport;
 import com.vaadin.flow.component.html.*;
 import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
+import com.vaadin.flow.dom.ThemeList;
 import com.vaadin.flow.router.Route;
+import com.vaadin.flow.theme.lumo.Lumo;
 import flaggguesser.GuessTheFlag.countrys.Country;
 import flaggguesser.GuessTheFlag.game_logic.GameService;
 import flaggguesser.GuessTheFlag.game_logic.RoundData;
+import flaggguesser.GuessTheFlag.game_logic.SettingsService;
+
 
 @Route("")
 @CssImport("./styles.css")
 public class GuessTheFlag extends VerticalLayout {
 
     private final GameService gameService;
+    private final SettingsService settingsService;
 
-    public GuessTheFlag(GameService gameService) {
+    public GuessTheFlag(GameService gameService, SettingsService settingsService) {
         this.gameService = gameService;
+        this.settingsService = settingsService;
         startingMenu();
     }
 
@@ -61,6 +69,28 @@ public class GuessTheFlag extends VerticalLayout {
         settingsText.addClassName("settingsHeading");
         add(settingsText);
         goBackToStartingMenu();
+        createLightOrDarkModeButton();
+    }
+
+    private void createLightOrDarkModeButton() {
+        ToggleButton toggle = new ToggleButton("Dark Mode");
+        boolean isDark = this.settingsService.isDarkMode();
+        toggle.setValue(isDark);
+        applyTheme(isDark);
+        toggle.addValueChangeListener(event -> {
+            applyTheme(event.getValue());
+        });
+
+        add(toggle);
+    }
+
+    private void applyTheme(boolean dark) {
+        ThemeList themes = UI.getCurrent().getElement().getThemeList();
+        if (dark) {
+            themes.add(Lumo.DARK);
+        } else {
+            themes.remove(Lumo.DARK);
+        }
     }
 
     // ======================== Game Logic ========================

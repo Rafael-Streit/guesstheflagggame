@@ -4,6 +4,7 @@
   "type": "module",
   "dependencies": {
     "@polymer/polymer": "3.5.2",
+    "@vaadin-component-factory/vcf-toggle-button": "1.0.3",
     "@vaadin/bundles": "24.9.6",
     "@vaadin/common-frontend": "0.0.19",
     "@vaadin/polymer-legacy-adapter": "24.9.6",
@@ -44,6 +45,7 @@
   "vaadin": {
     "dependencies": {
       "@polymer/polymer": "3.5.2",
+      "@vaadin-component-factory/vcf-toggle-button": "1.0.3",
       "@vaadin/bundles": "24.9.6",
       "@vaadin/common-frontend": "0.0.19",
       "@vaadin/polymer-legacy-adapter": "24.9.6",
@@ -81,7 +83,7 @@
       "workbox-core": "7.3.0",
       "workbox-precaching": "7.3.0"
     },
-    "hash": "09f0269bea063d54e47bacb4cf05f6eb1f5a9afa9f9a20da7b99bedcc188f586"
+    "hash": "5b7efbfd1f4c8ac92e0b7906517d6eab6aff21049b12eda8164d73e7112686cb"
   },
   "overrides": {
     "@vaadin/bundles": "$@vaadin/bundles",
@@ -158,6 +160,7 @@
     "@vaadin/upload": "24.9.6",
     "@vaadin/router": "2.0.1",
     "@vaadin/vertical-layout": "24.9.6",
-    "@vaadin/virtual-list": "24.9.6"
+    "@vaadin/virtual-list": "24.9.6",
+    "@vaadin-component-factory/vcf-toggle-button": "$@vaadin-component-factory/vcf-toggle-button"
   }
 }
