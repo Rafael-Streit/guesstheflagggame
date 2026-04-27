@@ -9,5 +9,4 @@ public class GuessTheFlagApplication {
     static void main(String[] args) {
 		SpringApplication.run(GuessTheFlagApplication.class, args);
 	}
-
 }

@@ -11,9 +11,15 @@ body {
     text-align: center;
     font-size: medium;
 }
-.light-or-dark-mode-switcher{
 
+
+.my-img-button{
+    display: inline-block;
+    margin: auto;
+    border-radius: 4rem;
+    position: relative;
 }
+
 .StartButton {
     background: grey;
     margin-top: 100px;
